@@ -24,7 +24,34 @@ function addEvent(name, date, startTime, endTime){
     newDiv.style.height = `${height}px`;
     newDiv.style.gridColumn = column;
     newDiv.style.gridRow = row;
+
+    newDiv.addEventListener("click", function(){addPopUp(newDiv)});
     eventContainer.appendChild(newDiv);
 
+}
+
+function addPopUp(element){
+    element.innerHTML = '';
+    const newDiv = document.createElement("div");
+    newDiv.setAttribute("class", "popup");
+    openPopup(newDiv);
+    const trash = document.createElement("INPUT");
+    trash.setAttribute("type", "button");
+    trash.setAttribute("class", "trash");
+    trash.setAttribute("value", "Delete Event");
+    trash.setAttribute("click", function(){deleteEvent(element)});
+    newDiv.appendChild(trash);
     
+}
+function openPopup(popup){
+    popup.classList.add("open-popup");
+}
+
+function closePopup(popup){
+    popup.classList.remove("open-popup");
+}
+
+function deleteEvent(element){
+    closePopup(element);
+    element.parentNode.removeChild(element);
 }

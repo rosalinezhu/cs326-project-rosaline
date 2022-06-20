@@ -101,3 +101,24 @@ ul {
     width: 14%;
     height: 15px;
 }
+
+.popup {
+    width: 300px;
+    background-color: rgba(252, 218, 229, 0.634);
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;;
+
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
