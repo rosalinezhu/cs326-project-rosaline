@@ -1,6 +1,6 @@
 .main {
     display: grid;
-    grid-template-columns: 130px auto;
+    grid-template-columns: 150px auto;
     grid-template-areas: 
     "create weekly-calendar"
 
@@ -14,7 +14,7 @@
 .weekly-calendar {
     display: grid;
     gap: 1px 1px;
-    grid-template-columns: 60px auto;
+    grid-template-columns: 70px auto;
     grid-template-rows: auto;
     grid-area: weekly-calendar;
     grid-template-areas: 
@@ -65,10 +65,10 @@ ul {
     padding: 0px;
 }
 
-.event-container {
+#event-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(36, 1fr);
+    grid-template-rows: repeat(28, 1fr);
     grid-area: event-container;
     position: relative;
 }
@@ -83,7 +83,21 @@ ul {
     position: absolute;
     background-color: pink;
     border-radius: 5px;
+    grid-row: 5;
+    grid-column: 2;
     z-index: 5;
     width: 14%;
-    height: 30px;
+    height: 15px;
+}
+
+.slot {
+    position: absolute;
+    text-align: center;
+    background-color: pink;
+    border-radius: 5px;
+    grid-row: 5;
+    grid-column: 2;
+    z-index: 5;
+    width: 14%;
+    height: 15px;
 }

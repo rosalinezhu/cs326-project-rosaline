@@ -10,13 +10,15 @@
     <body>
     <div class="main">
         <div class="create">
+            <label for="eventname">Enter Event Name: </label>
+            <input type="text" id='eventname'/><br>
             <label for="date">Enter Date: </label>
             <input type="date" id='date'/><br>
             <label for="starttime">Enter Start Time: </label>
             <input type="time" id='starttime'/><br>
             <label for="endtime">Enter End Time: </label>
             <input type="time" id='endtime'/><br>
-            <button>Add</button>
+            <input type="button" id="create" value="Create Event">
         </div>
         <div class="weekly-calendar">
             <div class="header">
@@ -43,22 +45,19 @@
 
             <div class="time-container">
                 <ul class="time">
-                    <li>9:00</li>
-                    <li>10:00</li>
-                    <li>11:00</li>
-                    <li>12:00</li>
+                    <li>9:00 AM</li>
+                    <li>10:00 AM</li>
+                    <li>11:00 AM</li>
+                    <li>12:00 PM</li>
+                    <li>1:00 PM</li>
+                    <li>2:00 PM</li>
+                    <li>3:00 PM</li>
                 
                 </ul>
 
             </div>
 
-            <div class="event-container">
-
-                <div class="slot-1">
-                    <div class="event-status"></div>
-                    <span>event a</span>
-                </div>
-            </div>
+            <div id="event-container"></div>
         </div> 
     </div>
 </body>
