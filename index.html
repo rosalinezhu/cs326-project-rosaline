@@ -3,12 +3,22 @@
     <head>
         <meta charset="UTF-8" />
         <title>Calendar</title>
-
+        <script type="module" src="main.js" defer></script>
         <link rel="stylesheet" href="main.css" />
+        
       </head>
+    <body>
     <div class="main">
+        <div class="create">
+            <label for="date">Enter Date: </label>
+            <input type="date" id='date'/><br>
+            <label for="starttime">Enter Start Time: </label>
+            <input type="time" id='starttime'/><br>
+            <label for="endtime">Enter End Time: </label>
+            <input type="time" id='endtime'/><br>
+            <button>Add</button>
+        </div>
         <div class="weekly-calendar">
-
             <div class="header">
                 <div class="weekdays">
                     <div>Sunday</div>
@@ -42,10 +52,14 @@
 
             </div>
 
-            
             <div class="event-container">
 
+                <div class="slot-1">
+                    <div class="event-status"></div>
+                    <span>event a</span>
+                </div>
             </div>
         </div> 
     </div>
+</body>
 </html>
