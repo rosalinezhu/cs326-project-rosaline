@@ -3,7 +3,7 @@
 ### Team Overview
 Rosaline Zhu - GitHub - rosalinezhu
 ### Application Idea
-A calendar website where multiple users can add and edit the same calendar. The idea is to create a collaborative calendar for a group of people to figure out overlapping free time and thus be able to plan out events together. The data this application will be working with is just going to be what the user puts in for the calender they create. Also be working with sharing the calendar to other users via email. 
+Going to start out with just a calender website where users can add events to the website to keep track of their schedules. The user should be able to input an event name, event date, event start and end time and have it properly display on the calendar. I would like to eventually expand on this if time allows and make it to compare two users' calendar and see if there are overlapping times.
 ### Functionality
-Users with start with a blank calendar at first. Then, users will have the option to add more users to the calendar by sharing through email. There will be an add button for the users to create an event and place it on their calendar. 
+User will enter a page with the current week displayed on the calendar. The user will have the option to add an event by putting in the vent name, event date, event start and end time. For data, I will just use local storage to store the users calendar. Each event is a div tab so I will be storing that in the local storage. I plan to implement a popup that opens when user clicks on an event on their calendar. This popup will give the user to delete the event. When that happens, the event will be removed from the local storage. 
 
