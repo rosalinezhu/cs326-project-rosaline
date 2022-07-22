@@ -1,14 +1,20 @@
 import { readFile, writeFile } from 'fs/promises';
 
-/** A class representing a database to store scores */
 class Database {
   constructor() {
-    this.path = 'scores.json';
+    let events = {};
+    this.path = 'events.json';
   }
   async saveEvent(date, startTime, endTime, event){
-    const data = await this._read();
-    data.event.push({date, time, event});
+    const data = JSON.stringify(events);
+    data.push({date, startTime, endTime, event});
     await this._write(data);
+
+  }
+
+  async displayEvents(){
+    const data = await this._read();
+    return data;
   }
 
   async _read() {
