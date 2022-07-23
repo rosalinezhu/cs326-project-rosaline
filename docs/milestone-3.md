@@ -10,4 +10,3 @@ User will enter a page with the current week displayed on the calendar. The user
 ### Video Link
 https://drive.google.com/file/d/1gzMc3_g1_qmjD1FYDk7SiQNN2Ohwh8_z/view
 
-I did try to implement another event listener(the popup feature I mentioned above). However, there are more debugging to do on that so it is not shown in the demo. 
